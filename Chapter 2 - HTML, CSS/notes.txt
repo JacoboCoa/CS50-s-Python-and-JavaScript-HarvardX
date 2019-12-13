@@ -1,0 +1,50 @@
+#Notes about Lecture1
+
+# BRANCHING
+
+#-> git branch
+- Mostra todos os branchs
+
+#-> git branch nome_do_novo_branch
+- Cria um novo branch com o nome especificado
+* Ex.: git branch feature
+
+#-> git checkout nome_do_branch
+- Troca-se o branch atual para o branch especificado
+- Change the current branch
+* Ex.: git checkout feature
+
+#-> git commit -am -m "Add and commit in one single command"
+- Adiciona todos os arquivos alterados e faz commit também
+
+#-> git log
+- Mostro o histórico de modificação
+
+#-> git merge feature
+- Mistura o feature criado ao branch master
+
+#-> git push --set-upstream origin feature
+- Dessa maneira o github reconhece o feature como branch, porque até então ele só 
+conhecia o master branch
+
+# REMOTES
+
+#-> git fetch
+- Baixa os arquivos que o github tem à mais em comparação com a máquina local. Atualizando-o.
+
+#-> git merge
+	origin/master
+- Mistura o que foi baixado (origin/master) com o branch que a máquina local (master) possui. 
+
+#-> git pull
+- Comando que executa a combinação dos comando git fetch e git merge
+
+
+# PULL REQUEST - GITHUB-SPECIFIC FEATURE (to merge the feature branch to the master branch)
+
+- You can select the feature added clicking at Compare & pull request
+- And then press the Create pull request
+- That allows to have a conversation about the changes between the people who make changes
+- This feature as a way of getting feedback and working together collaboratively
+
+
